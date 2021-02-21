@@ -5,9 +5,9 @@ function modificaPares(palabras, fx) {
   let palabrasParesModificadas = [];
   for (const i in palabras) {
     if (i % 2 !== 0) {
-      palabrasParesModificadas.push(fx(palabras));
+      palabrasParesModificadas.push(fx(palabras[i]));
     } else {
-      palabrasParesModificadas.push(palabras);
+      palabrasParesModificadas.push(palabras[i]);
     }
 
   }
